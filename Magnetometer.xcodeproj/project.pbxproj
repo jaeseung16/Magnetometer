@@ -14,6 +14,7 @@
 		9081C49A20503EDD009C3BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9081C49820503EDD009C3BDB /* LaunchScreen.storyboard */; };
 		9081C4A520503EDD009C3BDB /* MagnetometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081C4A420503EDD009C3BDB /* MagnetometerTests.swift */; };
 		9081C4B020503EDD009C3BDB /* MagnetometerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081C4AF20503EDD009C3BDB /* MagnetometerUITests.swift */; };
+		9081C4BE20504DBE009C3BDB /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081C4BD20504DBE009C3BDB /* UITextField+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9081C4AB20503EDD009C3BDB /* MagnetometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9081C4AF20503EDD009C3BDB /* MagnetometerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerUITests.swift; sourceTree = "<group>"; };
 		9081C4B120503EDD009C3BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9081C4BD20504DBE009C3BDB /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				9081C49620503EDD009C3BDB /* Assets.xcassets */,
 				9081C49820503EDD009C3BDB /* LaunchScreen.storyboard */,
 				9081C49B20503EDD009C3BDB /* Info.plist */,
+				9081C4BD20504DBE009C3BDB /* UITextField+Extensions.swift */,
 			);
 			path = Magnetometer;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9081C4BE20504DBE009C3BDB /* UITextField+Extensions.swift in Sources */,
 				9081C49220503EDD009C3BDB /* ViewController.swift in Sources */,
 				9081C49020503EDD009C3BDB /* AppDelegate.swift in Sources */,
 			);
