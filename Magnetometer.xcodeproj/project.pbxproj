@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9081C49020503EDD009C3BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081C48F20503EDD009C3BDB /* AppDelegate.swift */; };
+		9081C49220503EDD009C3BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081C49120503EDD009C3BDB /* ViewController.swift */; };
+		9081C49520503EDD009C3BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9081C49320503EDD009C3BDB /* Main.storyboard */; };
+		9081C49720503EDD009C3BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9081C49620503EDD009C3BDB /* Assets.xcassets */; };
+		9081C49A20503EDD009C3BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9081C49820503EDD009C3BDB /* LaunchScreen.storyboard */; };
+		9081C4A520503EDD009C3BDB /* MagnetometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081C4A420503EDD009C3BDB /* MagnetometerTests.swift */; };
+		9081C4B020503EDD009C3BDB /* MagnetometerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081C4AF20503EDD009C3BDB /* MagnetometerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9081C4A120503EDD009C3BDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9081C48420503EDD009C3BDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9081C48B20503EDD009C3BDB;
+			remoteInfo = Magnetometer;
+		};
+		9081C4AC20503EDD009C3BDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9081C48420503EDD009C3BDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9081C48B20503EDD009C3BDB;
+			remoteInfo = Magnetometer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9081C48C20503EDD009C3BDB /* Magnetometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magnetometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9081C48F20503EDD009C3BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9081C49120503EDD009C3BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9081C49420503EDD009C3BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9081C49620503EDD009C3BDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9081C49920503EDD009C3BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9081C49B20503EDD009C3BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9081C4A020503EDD009C3BDB /* MagnetometerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetometerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9081C4A420503EDD009C3BDB /* MagnetometerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerTests.swift; sourceTree = "<group>"; };
+		9081C4A620503EDD009C3BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9081C4AB20503EDD009C3BDB /* MagnetometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9081C4AF20503EDD009C3BDB /* MagnetometerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerUITests.swift; sourceTree = "<group>"; };
+		9081C4B120503EDD009C3BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9081C48920503EDD009C3BDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9081C49D20503EDD009C3BDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9081C4A820503EDD009C3BDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9081C48320503EDD009C3BDB = {
+			isa = PBXGroup;
+			children = (
+				9081C48E20503EDD009C3BDB /* Magnetometer */,
+				9081C4A320503EDD009C3BDB /* MagnetometerTests */,
+				9081C4AE20503EDD009C3BDB /* MagnetometerUITests */,
+				9081C48D20503EDD009C3BDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9081C48D20503EDD009C3BDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9081C48C20503EDD009C3BDB /* Magnetometer.app */,
+				9081C4A020503EDD009C3BDB /* MagnetometerTests.xctest */,
+				9081C4AB20503EDD009C3BDB /* MagnetometerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9081C48E20503EDD009C3BDB /* Magnetometer */ = {
+			isa = PBXGroup;
+			children = (
+				9081C48F20503EDD009C3BDB /* AppDelegate.swift */,
+				9081C49120503EDD009C3BDB /* ViewController.swift */,
+				9081C49320503EDD009C3BDB /* Main.storyboard */,
+				9081C49620503EDD009C3BDB /* Assets.xcassets */,
+				9081C49820503EDD009C3BDB /* LaunchScreen.storyboard */,
+				9081C49B20503EDD009C3BDB /* Info.plist */,
+			);
+			path = Magnetometer;
+			sourceTree = "<group>";
+		};
+		9081C4A320503EDD009C3BDB /* MagnetometerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9081C4A420503EDD009C3BDB /* MagnetometerTests.swift */,
+				9081C4A620503EDD009C3BDB /* Info.plist */,
+			);
+			path = MagnetometerTests;
+			sourceTree = "<group>";
+		};
+		9081C4AE20503EDD009C3BDB /* MagnetometerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9081C4AF20503EDD009C3BDB /* MagnetometerUITests.swift */,
+				9081C4B120503EDD009C3BDB /* Info.plist */,
+			);
+			path = MagnetometerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9081C48B20503EDD009C3BDB /* Magnetometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9081C4B420503EDD009C3BDB /* Build configuration list for PBXNativeTarget "Magnetometer" */;
+			buildPhases = (
+				9081C48820503EDD009C3BDB /* Sources */,
+				9081C48920503EDD009C3BDB /* Frameworks */,
+				9081C48A20503EDD009C3BDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Magnetometer;
+			productName = Magnetometer;
+			productReference = 9081C48C20503EDD009C3BDB /* Magnetometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9081C49F20503EDD009C3BDB /* MagnetometerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9081C4B720503EDD009C3BDB /* Build configuration list for PBXNativeTarget "MagnetometerTests" */;
+			buildPhases = (
+				9081C49C20503EDD009C3BDB /* Sources */,
+				9081C49D20503EDD009C3BDB /* Frameworks */,
+				9081C49E20503EDD009C3BDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9081C4A220503EDD009C3BDB /* PBXTargetDependency */,
+			);
+			name = MagnetometerTests;
+			productName = MagnetometerTests;
+			productReference = 9081C4A020503EDD009C3BDB /* MagnetometerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9081C4AA20503EDD009C3BDB /* MagnetometerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9081C4BA20503EDD009C3BDB /* Build configuration list for PBXNativeTarget "MagnetometerUITests" */;
+			buildPhases = (
+				9081C4A720503EDD009C3BDB /* Sources */,
+				9081C4A820503EDD009C3BDB /* Frameworks */,
+				9081C4A920503EDD009C3BDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9081C4AD20503EDD009C3BDB /* PBXTargetDependency */,
+			);
+			name = MagnetometerUITests;
+			productName = MagnetometerUITests;
+			productReference = 9081C4AB20503EDD009C3BDB /* MagnetometerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9081C48420503EDD009C3BDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jae Seung Lee";
+				TargetAttributes = {
+					9081C48B20503EDD009C3BDB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9081C49F20503EDD009C3BDB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9081C48B20503EDD009C3BDB;
+					};
+					9081C4AA20503EDD009C3BDB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9081C48B20503EDD009C3BDB;
+					};
+				};
+			};
+			buildConfigurationList = 9081C48720503EDD009C3BDB /* Build configuration list for PBXProject "Magnetometer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9081C48320503EDD009C3BDB;
+			productRefGroup = 9081C48D20503EDD009C3BDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9081C48B20503EDD009C3BDB /* Magnetometer */,
+				9081C49F20503EDD009C3BDB /* MagnetometerTests */,
+				9081C4AA20503EDD009C3BDB /* MagnetometerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9081C48A20503EDD009C3BDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9081C49A20503EDD009C3BDB /* LaunchScreen.storyboard in Resources */,
+				9081C49720503EDD009C3BDB /* Assets.xcassets in Resources */,
+				9081C49520503EDD009C3BDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9081C49E20503EDD009C3BDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9081C4A920503EDD009C3BDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9081C48820503EDD009C3BDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9081C49220503EDD009C3BDB /* ViewController.swift in Sources */,
+				9081C49020503EDD009C3BDB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9081C49C20503EDD009C3BDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9081C4A520503EDD009C3BDB /* MagnetometerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9081C4A720503EDD009C3BDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9081C4B020503EDD009C3BDB /* MagnetometerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9081C4A220503EDD009C3BDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9081C48B20503EDD009C3BDB /* Magnetometer */;
+			targetProxy = 9081C4A120503EDD009C3BDB /* PBXContainerItemProxy */;
+		};
+		9081C4AD20503EDD009C3BDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9081C48B20503EDD009C3BDB /* Magnetometer */;
+			targetProxy = 9081C4AC20503EDD009C3BDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9081C49320503EDD009C3BDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9081C49420503EDD009C3BDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9081C49820503EDD009C3BDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9081C49920503EDD009C3BDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9081C4B220503EDD009C3BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9081C4B320503EDD009C3BDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9081C4B520503EDD009C3BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RWVTTVMWBE;
+				INFOPLIST_FILE = Magnetometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resonance.Magnetometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9081C4B620503EDD009C3BDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RWVTTVMWBE;
+				INFOPLIST_FILE = Magnetometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resonance.Magnetometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9081C4B820503EDD009C3BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RWVTTVMWBE;
+				INFOPLIST_FILE = MagnetometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resonance.MagnetometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magnetometer.app/Magnetometer";
+			};
+			name = Debug;
+		};
+		9081C4B920503EDD009C3BDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RWVTTVMWBE;
+				INFOPLIST_FILE = MagnetometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resonance.MagnetometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magnetometer.app/Magnetometer";
+			};
+			name = Release;
+		};
+		9081C4BB20503EDD009C3BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RWVTTVMWBE;
+				INFOPLIST_FILE = MagnetometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resonance.MagnetometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Magnetometer;
+			};
+			name = Debug;
+		};
+		9081C4BC20503EDD009C3BDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RWVTTVMWBE;
+				INFOPLIST_FILE = MagnetometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.resonance.MagnetometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Magnetometer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9081C48720503EDD009C3BDB /* Build configuration list for PBXProject "Magnetometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9081C4B220503EDD009C3BDB /* Debug */,
+				9081C4B320503EDD009C3BDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9081C4B420503EDD009C3BDB /* Build configuration list for PBXNativeTarget "Magnetometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9081C4B520503EDD009C3BDB /* Debug */,
+				9081C4B620503EDD009C3BDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9081C4B720503EDD009C3BDB /* Build configuration list for PBXNativeTarget "MagnetometerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9081C4B820503EDD009C3BDB /* Debug */,
+				9081C4B920503EDD009C3BDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9081C4BA20503EDD009C3BDB /* Build configuration list for PBXNativeTarget "MagnetometerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9081C4BB20503EDD009C3BDB /* Debug */,
+				9081C4BC20503EDD009C3BDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9081C48420503EDD009C3BDB /* Project object */;
+}
