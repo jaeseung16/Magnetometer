@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,18 +14,36 @@
         <!--Vector-->
         <scene sceneID="e2f-aS-eu9">
             <objects>
-                <viewController id="Lcy-7j-OWf" sceneMemberID="viewController">
+                <viewController id="Lcy-7j-OWf" customClass="VectorViewController" customModule="Magnetometer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="woK-h8-obA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHy-xH-CeU">
+                                <rect key="frame" x="16" y="147.5" width="343" height="343"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QHy-xH-CeU" secondAttribute="height" multiplier="1:1" id="IE3-c9-9tD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QHy-xH-CeU" firstAttribute="leading" secondItem="5AU-6Z-Poa" secondAttribute="leading" constant="16" id="0l3-VT-LBs"/>
+                            <constraint firstItem="QHy-xH-CeU" firstAttribute="centerX" secondItem="5AU-6Z-Poa" secondAttribute="centerX" id="FOc-0f-i1S"/>
+                            <constraint firstItem="5AU-6Z-Poa" firstAttribute="trailing" secondItem="QHy-xH-CeU" secondAttribute="trailing" constant="16" id="JUN-zw-VqM"/>
+                            <constraint firstItem="QHy-xH-CeU" firstAttribute="centerY" secondItem="5AU-6Z-Poa" secondAttribute="centerY" id="X7i-kH-dr6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5AU-6Z-Poa"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="Vector" id="1Iy-lu-xrx"/>
+                    <connections>
+                        <outlet property="vectorView" destination="QHy-xH-CeU" id="u79-dF-3eb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="myP-Nz-139" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-729" y="740"/>
+            <point key="canvasLocation" x="-730.39999999999998" y="739.88005997001505"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="esU-Bi-ZQr">
@@ -421,6 +440,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-730" y="57"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WLy-Ru-peb">
+            <objects>
+                <viewController id="GGk-Zb-QUX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ys-i8-WJ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fCr-Dh-fae"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Fb-WI-s9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>
