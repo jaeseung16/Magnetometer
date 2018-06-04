@@ -172,7 +172,7 @@ class ViewController: UIViewController {
         motionManager.deviceMotionUpdateInterval = interval
         
         motionManager.showsDeviceMovementDisplay = true
-        motionManager.startDeviceMotionUpdates(using: .xTrueNorthZVertical, to: OperationQueue.main) { (data, error) in
+        motionManager.startDeviceMotionUpdates(using: .xMagneticNorthZVertical, to: OperationQueue.main) { (data, error) in
             if let magneticField = data?.magneticField {
                 let xComponent = magneticField.field.x
                 let yComponent = magneticField.field.y
@@ -213,7 +213,7 @@ extension ViewController: UITextFieldDelegate {
 
 extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        print("\(newHeading.x)")
+        print("\(newHeading.timestamp)")
         
         xComponentFromCLHeading.text = String(format: "%.3f", newHeading.x)
         yComponentFromCLHeading.text = String(format: "%.3f", newHeading.y)
