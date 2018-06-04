@@ -100,7 +100,7 @@ class ViewController: UIViewController {
         if CLLocationManager.locationServicesEnabled() {
             locationManager = CLLocationManager()
             locationManager?.delegate = self
-            print("\(locationManager)")
+            print("\(String(describing: locationManager))")
         } else {
             print("Location services are not availabe")
         }

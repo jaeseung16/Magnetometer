@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 1-->
+        <!--Vector-->
         <scene sceneID="e2f-aS-eu9">
             <objects>
                 <viewController id="Lcy-7j-OWf" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5AU-6Z-Poa"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="1Iy-lu-xrx"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Vector" id="1Iy-lu-xrx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="myP-Nz-139" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,15 +36,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Lcy-7j-OWf" kind="relationship" relationship="viewControllers" id="hAh-ZH-CWR"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="SNI-4P-Rfz"/>
+                        <segue destination="Lcy-7j-OWf" kind="relationship" relationship="viewControllers" id="hAh-ZH-CWR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JOI-h6-1TK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1633" y="271"/>
         </scene>
-        <!--Item-->
+        <!--Number-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magnetometer" customModuleProvider="target" sceneMemberID="viewController">
@@ -400,7 +400,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="cMM-3j-5Xn"/>
+                    <tabBarItem key="tabBarItem" title="Number" id="cMM-3j-5Xn"/>
                     <connections>
                         <outlet property="accuracyLabel" destination="KJb-sI-A1r" id="KHV-3M-Tz3"/>
                         <outlet property="magnitudeFromCLHeading" destination="eHb-uh-joS" id="Zup-JO-TKZ"/>
