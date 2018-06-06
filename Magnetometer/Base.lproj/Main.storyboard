@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="-730.39999999999998" y="739.88005997001505"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Magnetometer Tab Bar Controller-->
         <scene sceneID="esU-Bi-ZQr">
             <objects>
-                <tabBarController id="Qqs-CE-1cq" sceneMemberID="viewController">
+                <tabBarController id="Qqs-CE-1cq" customClass="MagnetometerTabBarController" customModule="Magnetometer" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wi4-ux-Vm9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -17,15 +17,20 @@ class VectorViewController: UIViewController {
     
     let vectorTransformLayer = CATransformLayer()
     let sideLength = CGFloat(160.0)
-    
-    let motionManager = CMMotionManager()
-    
+    var motionManager: CMMotionManager!
     
     // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        guard let tabBarController = self.tabBarController as? MagnetometerTabBarController else {
+            print("This message should not be seen. Or something is very wrong.")
+            return
+        }
+        
+        motionManager = tabBarController.motionManager
+        
         setUpVectorTransformLayer()
         vectorView.layer.addSublayer(vectorTransformLayer)
     }

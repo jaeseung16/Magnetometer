@@ -33,21 +33,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var yComponentFromCLHeading: UILabel!
     @IBOutlet weak var zComponentFromCLHeading: UILabel!
     
-    let motionManager = CMMotionManager()
+    var motionManager: CMMotionManager!
     var locationManager: CLLocationManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        guard motionManager.isMagnetometerAvailable else {
-            /*
-            let alert = UIAlertController(title: "No Magnetometer", message: "The device does not have the ability to measure magnetic fields", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)*/
-            print("There is no magnetometer")
+        guard let tabBarController = self.tabBarController as? MagnetometerTabBarController else {
+            print("This message should not be seen. Or something is very wrong.")
             return
         }
+        
+        motionManager = tabBarController.motionManager
         
         updateIntervalTextField.text = "1.0"
         

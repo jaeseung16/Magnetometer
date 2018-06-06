@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9030948E20C5FA4600002664 /* VectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030948D20C5FA4600002664 /* VectorViewController.swift */; };
+		9065448E20C896D00098D333 /* MagnetometerTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9065448D20C896D00098D333 /* MagnetometerTabBarController.swift */; };
 		9081C49020503EDD009C3BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081C48F20503EDD009C3BDB /* AppDelegate.swift */; };
 		9081C49220503EDD009C3BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081C49120503EDD009C3BDB /* ViewController.swift */; };
 		9081C49520503EDD009C3BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9081C49320503EDD009C3BDB /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		9030948D20C5FA4600002664 /* VectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorViewController.swift; sourceTree = "<group>"; };
+		9065448D20C896D00098D333 /* MagnetometerTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerTabBarController.swift; sourceTree = "<group>"; };
 		9081C48C20503EDD009C3BDB /* Magnetometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magnetometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9081C48F20503EDD009C3BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9081C49120503EDD009C3BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,8 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				9081C48F20503EDD009C3BDB /* AppDelegate.swift */,
-				9081C49120503EDD009C3BDB /* ViewController.swift */,
 				9081C49320503EDD009C3BDB /* Main.storyboard */,
+				9065448D20C896D00098D333 /* MagnetometerTabBarController.swift */,
+				9081C49120503EDD009C3BDB /* ViewController.swift */,
 				9030948D20C5FA4600002664 /* VectorViewController.swift */,
 				9081C49620503EDD009C3BDB /* Assets.xcassets */,
 				9081C49820503EDD009C3BDB /* LaunchScreen.storyboard */,
@@ -269,6 +272,7 @@
 				9081C49220503EDD009C3BDB /* ViewController.swift in Sources */,
 				9081C49020503EDD009C3BDB /* AppDelegate.swift in Sources */,
 				9030948E20C5FA4600002664 /* VectorViewController.swift in Sources */,
+				9065448E20C896D00098D333 /* MagnetometerTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
