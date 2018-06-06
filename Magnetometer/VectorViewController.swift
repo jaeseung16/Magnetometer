@@ -34,11 +34,15 @@ class VectorViewController: UIViewController {
         }
         
         motionManager = tabBarController.motionManager
+
+        controlButton.setTitle("START", for: .normal)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         
         setUpVectorTransformLayer()
         vectorView.layer.addSublayer(vectorTransformLayer)
-        
-        controlButton.setTitle("START", for: .normal)
     }
     
     @IBAction func startStop(_ sender: UIButton) {
