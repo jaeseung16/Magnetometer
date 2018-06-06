@@ -26,18 +26,28 @@
                                     <constraint firstAttribute="width" secondItem="QHy-xH-CeU" secondAttribute="height" multiplier="1:1" id="IE3-c9-9tD"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0f-rg-6yL">
+                                <rect key="frame" x="163.5" y="498" width="47" height="30"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="startStop:" destination="Lcy-7j-OWf" eventType="touchUpInside" id="10s-Mh-9lu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QHy-xH-CeU" firstAttribute="leading" secondItem="5AU-6Z-Poa" secondAttribute="leading" constant="16" id="0l3-VT-LBs"/>
                             <constraint firstItem="QHy-xH-CeU" firstAttribute="centerX" secondItem="5AU-6Z-Poa" secondAttribute="centerX" id="FOc-0f-i1S"/>
                             <constraint firstItem="5AU-6Z-Poa" firstAttribute="trailing" secondItem="QHy-xH-CeU" secondAttribute="trailing" constant="16" id="JUN-zw-VqM"/>
+                            <constraint firstItem="O0f-rg-6yL" firstAttribute="centerX" secondItem="5AU-6Z-Poa" secondAttribute="centerX" id="R6f-1C-Asq"/>
+                            <constraint firstItem="O0f-rg-6yL" firstAttribute="top" secondItem="QHy-xH-CeU" secondAttribute="bottom" constant="7.5" id="TLk-Sq-P7p"/>
                             <constraint firstItem="QHy-xH-CeU" firstAttribute="centerY" secondItem="5AU-6Z-Poa" secondAttribute="centerY" id="X7i-kH-dr6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5AU-6Z-Poa"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="Vector" id="1Iy-lu-xrx"/>
                     <connections>
+                        <outlet property="controlButton" destination="O0f-rg-6yL" id="7Le-z8-rfy"/>
                         <outlet property="vectorView" destination="QHy-xH-CeU" id="u79-dF-3eb"/>
                     </connections>
                 </viewController>

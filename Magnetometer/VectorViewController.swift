@@ -14,9 +14,13 @@ class VectorViewController: UIViewController {
     // MARK: Properties
     // IBOutlets
     @IBOutlet weak var vectorView: UIView!
+    @IBOutlet weak var controlButton: UIButton!
     
+    // Constants
     let vectorTransformLayer = CATransformLayer()
     let sideLength = CGFloat(160.0)
+    
+    // Variables
     var motionManager: CMMotionManager!
     
     // MARK: - Methods
@@ -33,24 +37,30 @@ class VectorViewController: UIViewController {
         
         setUpVectorTransformLayer()
         vectorView.layer.addSublayer(vectorTransformLayer)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        controlButton.setTitle("START", for: .normal)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func startStop(_ sender: UIButton) {
+        guard sender == controlButton, let buttonTitle = controlButton.currentTitle else {
+            print("Cannot determine what to do.")
+            return
+        }
+        
+        var newString: String
+        
+        switch buttonTitle {
+        case "START":
+            newString = "STOP"
+        case "STOP":
+            newString = "START"
+        default:
+            newString = ""
+        }
+        
+        controlButton.setTitle(newString, for: .normal)
     }
-    */
-
+    
     func setUpVectorTransformLayer() {
         vectorTransformLayer.frame = CGRect(x: 0.0, y: 0.0, width: vectorView.bounds.maxX, height: vectorView.bounds.maxY)
         //arrowTransformLayer.position = CGPoint(x: arrowView.bounds.midX, y: arrowView.bounds.midY)
