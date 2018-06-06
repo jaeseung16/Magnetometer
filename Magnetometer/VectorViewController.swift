@@ -52,13 +52,40 @@ class VectorViewController: UIViewController {
         switch buttonTitle {
         case "START":
             newString = "STOP"
+            measuringMagneticField()
         case "STOP":
             newString = "START"
+            stopMeasuringMagneticField()
         default:
             newString = ""
         }
         
         controlButton.setTitle(newString, for: .normal)
+    }
+    
+    func stopMeasuringMagneticField() {
+        motionManager.stopMagnetometerUpdates()
+        motionManager.stopDeviceMotionUpdates()
+        print("stopped")
+    }
+    
+    func measuringMagneticField() {
+        motionManager.magnetometerUpdateInterval = 0.1
+
+        motionManager.startDeviceMotionUpdates(using: .xMagneticNorthZVertical, to: OperationQueue.main) { (data, error) in
+            if let magneticField = data?.magneticField {
+                let xComponent = magneticField.field.x
+                let yComponent = magneticField.field.y
+                let zComponent = magneticField.field.z
+                let accuracy = magneticField.accuracy.rawValue
+                
+                let magnitude = sqrt(xComponent * xComponent + yComponent * yComponent + zComponent * zComponent)
+                
+                self.vectorTransformLayer.sublayerTransform = self.rotateTo(x: CGFloat(xComponent), y: CGFloat(yComponent), z: CGFloat(xComponent))
+            }
+        }
+        
+        print("\(motionManager.isDeviceMotionActive)")
     }
     
     func setUpVectorTransformLayer() {
@@ -92,5 +119,18 @@ class VectorViewController: UIViewController {
         layer.shadowRadius = 10
         layer.zPosition = zPosition
         return layer
+    }
+    
+    func rotateTo(x: CGFloat, y: CGFloat, z: CGFloat) -> CATransform3D {
+        let θ = acos( z / sqrt(x*x + y*y + z*z) )
+        
+        guard x*x + y*y > 0 else {
+            return CATransform3DIdentity
+        }
+        
+        let rotX = y / sqrt(x*x + y*y)
+        let rotY = -x / sqrt(x*x + y*y)
+        
+        return CATransform3DRotate(CATransform3DIdentity, θ, rotX, rotY, 0.0)
     }
 }
