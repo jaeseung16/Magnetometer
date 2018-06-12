@@ -81,11 +81,11 @@ class VectorViewController: UIViewController {
                 let xComponent = magneticField.field.x
                 let yComponent = magneticField.field.y
                 let zComponent = magneticField.field.z
-                let accuracy = magneticField.accuracy.rawValue
+                // let accuracy = magneticField.accuracy.rawValue
                 
-                let magnitude = sqrt(xComponent * xComponent + yComponent * yComponent + zComponent * zComponent)
+                // let magnitude = sqrt(xComponent * xComponent + yComponent * yComponent + zComponent * zComponent)
                 
-                self.vectorTransformLayer.sublayerTransform = self.rotateTo(x: CGFloat(xComponent), y: CGFloat(yComponent), z: CGFloat(xComponent))
+                self.vectorTransformLayer.sublayerTransform = self.rotateTo(x: CGFloat(xComponent), y: CGFloat(yComponent), z: CGFloat(zComponent))
             }
         }
         
