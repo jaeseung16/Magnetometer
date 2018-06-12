@@ -18,6 +18,7 @@ class VectorViewController: UIViewController {
     
     // Constants
     let vectorTransformLayer = CATransformLayer()
+    let uncalibratedVectorTransformLayer = CATransformLayer()
     let sideLength = CGFloat(160.0)
     
     // Variables
@@ -43,6 +44,8 @@ class VectorViewController: UIViewController {
         
         setUpVectorTransformLayer()
         vectorView.layer.addSublayer(vectorTransformLayer)
+        setUpUncalibratedVectorTransformLayer()
+        vectorView.layer.addSublayer(uncalibratedVectorTransformLayer)
     }
     
     @IBAction func startStop(_ sender: UIButton) {
@@ -74,8 +77,23 @@ class VectorViewController: UIViewController {
     }
     
     func measuringMagneticField() {
+        motionManager.deviceMotionUpdateInterval = 0.1
         motionManager.magnetometerUpdateInterval = 0.1
 
+        motionManager.startMagnetometerUpdates(to: OperationQueue.main) { (data, error) in
+            if let magneticfield = data?.magneticField {
+                let xComponent = magneticfield.x
+                let yComponent = magneticfield.y
+                let zComponent = magneticfield.z
+                
+                //let magnitude = sqrt(magneticfield.x * magneticfield.x + magneticfield.y * magneticfield.y + magneticfield.z * magneticfield.z)
+                
+                self.uncalibratedVectorTransformLayer.sublayerTransform = self.rotateTo(x: CGFloat(xComponent), y: CGFloat(yComponent), z: CGFloat(zComponent))
+                
+                print("uncalibrated")
+            }
+        }
+        
         motionManager.startDeviceMotionUpdates(using: .xMagneticNorthZVertical, to: OperationQueue.main) { (data, error) in
             if let magneticField = data?.magneticField {
                 let xComponent = magneticField.field.x
@@ -86,8 +104,12 @@ class VectorViewController: UIViewController {
                 // let magnitude = sqrt(xComponent * xComponent + yComponent * yComponent + zComponent * zComponent)
                 
                 self.vectorTransformLayer.sublayerTransform = self.rotateTo(x: CGFloat(xComponent), y: CGFloat(yComponent), z: CGFloat(zComponent))
+                
+                print("calibrated")
             }
         }
+        
+        
         
         print("\(motionManager.isDeviceMotionActive)")
     }
@@ -106,6 +128,23 @@ class VectorViewController: UIViewController {
         vectorTransformLayer.addSublayer(layer3)
         
         vectorTransformLayer.anchorPointZ = 0.0
+        //rotate(xOffset: 0.0, yOffset: 0.0)
+    }
+    
+    func setUpUncalibratedVectorTransformLayer() {
+        uncalibratedVectorTransformLayer.frame = CGRect(x: 0.0, y: 0.0, width: vectorView.bounds.maxX, height: vectorView.bounds.maxY)
+        //arrowTransformLayer.position = CGPoint(x: arrowView.bounds.midX, y: arrowView.bounds.midY)
+        
+        let layer1 = vectorLayer(backgroundColor: UIColor.black.cgColor, zPosition: 5.0)
+        uncalibratedVectorTransformLayer.addSublayer(layer1)
+        
+        let layer2 = vectorLayer(backgroundColor: UIColor.white.cgColor, zPosition: sideLength/5.0)
+        uncalibratedVectorTransformLayer.addSublayer(layer2)
+        
+        let layer3 = vectorLayer(backgroundColor: UIColor.red.cgColor, zPosition: sideLength/(-5.0))
+        uncalibratedVectorTransformLayer.addSublayer(layer3)
+        
+        uncalibratedVectorTransformLayer.anchorPointZ = 0.0
         //rotate(xOffset: 0.0, yOffset: 0.0)
     }
     
