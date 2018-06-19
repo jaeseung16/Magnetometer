@@ -10,16 +10,6 @@ import UIKit
 import CoreMotion
 import CoreLocation
 
-struct MagneticField {
-    var x: Double
-    var y: Double
-    var z: Double
-    
-    var magnitude: Double {
-        return sqrt(x * x + y * y + z * z)
-    }
-}
-
 class ViewController: UIViewController {
 
     @IBOutlet weak var magnitudeLabel: UILabel!

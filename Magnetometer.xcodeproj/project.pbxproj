@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90155E9D20D9C91B00A9BE52 /* MagneticField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90155E9C20D9C91B00A9BE52 /* MagneticField.swift */; };
 		9030948E20C5FA4600002664 /* VectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030948D20C5FA4600002664 /* VectorViewController.swift */; };
 		9065448E20C896D00098D333 /* MagnetometerTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9065448D20C896D00098D333 /* MagnetometerTabBarController.swift */; };
 		9081C49020503EDD009C3BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081C48F20503EDD009C3BDB /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		90155E9C20D9C91B00A9BE52 /* MagneticField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticField.swift; sourceTree = "<group>"; };
 		9030948D20C5FA4600002664 /* VectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorViewController.swift; sourceTree = "<group>"; };
 		9065448D20C896D00098D333 /* MagnetometerTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerTabBarController.swift; sourceTree = "<group>"; };
 		9081C48C20503EDD009C3BDB /* Magnetometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magnetometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 				9081C49820503EDD009C3BDB /* LaunchScreen.storyboard */,
 				9081C49B20503EDD009C3BDB /* Info.plist */,
 				9081C4BD20504DBE009C3BDB /* UITextField+Extensions.swift */,
+				90155E9C20D9C91B00A9BE52 /* MagneticField.swift */,
 			);
 			path = Magnetometer;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				9081C49220503EDD009C3BDB /* ViewController.swift in Sources */,
 				9081C49020503EDD009C3BDB /* AppDelegate.swift in Sources */,
 				9030948E20C5FA4600002664 /* VectorViewController.swift in Sources */,
+				90155E9D20D9C91B00A9BE52 /* MagneticField.swift in Sources */,
 				9065448E20C896D00098D333 /* MagnetometerTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
