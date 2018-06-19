@@ -10,6 +10,16 @@ import UIKit
 import CoreMotion
 import CoreLocation
 
+struct MagneticField {
+    var x: Double
+    var y: Double
+    var z: Double
+    
+    var magnitude: Double {
+        return sqrt(x * x + y * y + z * z)
+    }
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var magnitudeLabel: UILabel!
@@ -36,6 +46,9 @@ class ViewController: UIViewController {
     var motionManager: CMMotionManager!
     var locationManager: CLLocationManager?
     
+    var rawMagneticField = MagneticField(x: 0.0, y: 0.0, z: 0.0)
+    var calibratedMagneticField = MagneticField(x: 0.0, y: 0.0, z: 0.0)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,14 +64,20 @@ class ViewController: UIViewController {
         motionManager.magnetometerUpdateInterval = 0.1
         motionManager.startMagnetometerUpdates(to: OperationQueue.main) { (data, error) in
             if let magneticfield = data?.magneticField {
-                self.xComponentLabel.text = String(format: "%.1f", magneticfield.x)
-                self.yComponentLabel.text = String(format: "%.1f", magneticfield.y)
-                self.zComponentLabel.text = String(format: "%.1f", magneticfield.z)
+                self.rawMagneticField.x = magneticfield.x
+                self.rawMagneticField.y = magneticfield.y
+                self.rawMagneticField.z = magneticfield.z
+
+                let differenceMangeticField = MagneticField(x: magneticfield.x - self.calibratedMagneticField.x, y: magneticfield.y - self.calibratedMagneticField.y, z: magneticfield.z - self.calibratedMagneticField.z)
                 
-                let magnitude = sqrt(magneticfield.x * magneticfield.x + magneticfield.y * magneticfield.y + magneticfield.z * magneticfield.z)
+                self.xComponentLabel.text = String(format: "%.1f", differenceMangeticField.x)
+                self.yComponentLabel.text = String(format: "%.1f", differenceMangeticField.y)
+                self.zComponentLabel.text = String(format: "%.1f", differenceMangeticField.z)
+                
+                
+                let magnitude = differenceMangeticField.magnitude
                 
                 self.magnitudeLabel.text = String(format: "%.1f", magnitude)
-                
             }
         }
         
@@ -73,17 +92,17 @@ class ViewController: UIViewController {
         
         motionManager.startDeviceMotionUpdates(using: .xTrueNorthZVertical, to: OperationQueue.main) { (data, error) in
             if let magneticField = data?.magneticField {
-                let xComponent = magneticField.field.x
-                let yComponent = magneticField.field.y
-                let zComponent = magneticField.field.z
+                self.calibratedMagneticField.x = magneticField.field.x
+                self.calibratedMagneticField.y = magneticField.field.y
+                self.calibratedMagneticField.z = magneticField.field.z
                 let accuracy = magneticField.accuracy
                 
-                self.xComponentProcessedLabel.text = String(format: "%.5f", xComponent)
-                self.yComponentProcessedLabel.text = String(format: "%.5f", yComponent)
-                self.zComponentProcessedLabel.text = String(format: "%.5f", zComponent)
+                self.xComponentProcessedLabel.text = String(format: "%.5f", magneticField.field.x)
+                self.yComponentProcessedLabel.text = String(format: "%.5f", magneticField.field.y)
+                self.zComponentProcessedLabel.text = String(format: "%.5f", magneticField.field.z)
                 self.accuracyLabel.text = "\(accuracy.rawValue)"
                 
-                let magnitude = sqrt(xComponent * xComponent + yComponent * yComponent + zComponent * zComponent)
+                let magnitude = self.calibratedMagneticField.magnitude
                 
                 self.magnitudeProcessedLabel.text = String(format: "%.5f", magnitude)
             }
